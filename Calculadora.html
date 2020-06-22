@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Calculadora.css">
+    <script src="Calculadora.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend class="titulo">Calculadora</legend>
+        <div class="wraper">
+            <form name="form"><input type="text" class="visor" name="visor" value="" disabled></form>
+                <div class="linha">
+                    
+                    <input class="calc" type="button" value="C" onclick="limpa_tela()">
+                    <input type="button" class="botao" value="1" onclick="atualiza_visor(1)">
+                    <input type="button" class="botao" value="2" onclick="atualiza_visor(2)">
+                    <input type="button" class="operador" value="*" onclick="atualiza_visor('*')">
+                    <input type="button" class="calc" value="bck" onclick="backspace()">
+                </div>
+                <div class="linha">
+                    <input type="button" class="botao" value="3" onclick="atualiza_visor(3)">
+                    <input type="button" class="botao" value="4" onclick="atualiza_visor(4)">
+                    <input type="button" class="botao" value="5" onclick="atualiza_visor(5)">
+                    <input type="button" class="operador" value="/" onclick="atualiza_visor('/')">
+                    <button class="vazio"></button>
+                    
+                </div>
+                <div class="linha">
+                    <input type="button" class="botao" value="6" onclick="atualiza_visor(6)">
+                    <input type="button" class="botao" value="7" onclick="atualiza_visor(7)">
+                    <input type="button" class="botao" value="8" onclick="atualiza_visor(8)">
+                    <input type="button" class="operador" value="+" onclick="atualiza_visor('+')">
+                    <input type="button" class="operador" value="-" onclick="atualiza_visor('-')">  
+                </div>
+                <div class="linha">
+                    <input type="button" class="botao" value="9" onclick="atualiza_visor(9)">
+                    <input type="button" class="botao" value="0" onclick="atualiza_visor(0)">
+                    <input type="button" value="." class="operador" onclick="atualiza_visor('.')">
+                    <input type="button" class="operador" value="%" onclick="atualiza_visor('%')">
+                    <input type="button" value="=" class="calc" onclick="operacao()"> 
+                </div>
+            </div>
+    </fieldset>
+</body>
+</html>
