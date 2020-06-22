@@ -1,2 +1,2 @@
 # Calculadora HTML/JS
- Calculadora programada em JavasCript com integração em HTML
+ Calculadora programada em JavaScript integrado a uma página web.
